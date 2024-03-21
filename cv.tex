@@ -1,0 +1,310 @@
+%-------------------------
+% Resume in Latex
+% Author : Gennadii Chursov
+% Based off of: https://github.com/sb2nov/resume and https://www.overleaf.com/latex/templates/jakes-resume/syzfjbzwjncs
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{ragged2e}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\hypersetup {
+  colorlinks=false,% hyperlinks will be black
+  pdfborderstyle={/S/U/W 1}% border style will be underline of width 1pt
+}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+  \item
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \textit{\small#1} & \textit{\small #2} \\
+  \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[3]{
+  \item
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \small\textbf{#1} & #2 \\
+    \textit{\small#3} \\
+  \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\begin{center}
+  \textbf{\Huge \scshape Fuad Ismail} \\ \vspace{1pt}
+  \small \textit{} \\
+  +62-838-9937-3595 $|$ \href{mailto:fuad1502@gmail.com}{fuad1502@gmail.com} $|$ 
+  \href{https://github.com/fuad1502}{github.com/fuad1502}
+\end{center}
+
+%-----------SUMMARY-----------
+\section*{Summary}
+\justifying
+I am an ex-R\&D Hardware Engineer from Keysight Technologies Malaysia with over
+4 years of experience in the hardware industry (RF, electronics, embedded).
+Despite that, I am acquinted with software development, as my work frequently
+require me to develop softwares, such as embedded software, mathematical
+simulation, and computational libraries.
+
+I took a career break since August 2023 due to personal reasons. I am currently
+self studying Computer Science to break into the industry. See
+\href{https://github.com/fuad1502/self-study-cs}{github.com/fuad1502/self-study-cs}
+to know what I've achieved throughout my 7-months career break.
+
+I am mainly interested in Systems Software (OS, Database, Distributed and
+Embedded Systems) and my goal is to consistently contribute to the OSS
+ecosystem by contributing to public repositories and building my own OSS
+projects. Currently, I have contributed and will be contributing regularly to
+\href{https://github.com/verilator/verilator}{Verilator}, an open-source
+SystemVerilog simulator and lint system. 
+
+I am a passionate learner commited to continuous learning and have a track
+record of showing initiative at the workplace and deeply care about my work.
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading
+  {Bandung Institute of Technology}{Bandung, Indonesia}
+  {Electrical Engineering (BS), ABET Accredited, GPA
+  3.81/4.0}{2014 - 2018}
+\resumeSubHeadingListEnd
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+\small{\item{
+  \textbf{Programming Languages}{: Rust, Go, C, C++, Java, JavaScript,
+  Python, SQL, SystemVerilog, MATLAB} \\
+  \textbf{Developer Tools}{: Git, Docker/Podman, CMake, Make} \\
+  \textbf{Libraries / Frameworks}{: React, Gin}
+}}
+\end{itemize}
+
+%-----------PROJECTS-----------
+\section{OSS Projects}
+\resumeSubHeadingListStart
+\resumeProjectHeading
+  {Bilbob: A Social Media for Your Pets}{February 2024 -- Present}
+  {\href{https://github.com/fuad1502/bilbob}{github.com/fuad1502/bilbob}}
+\begin{justify}
+Bilbob is a Social Media platform written in Go with Gin web framework for the
+  backend and Javascript with React for the frontend. This project originally
+  meant as a learning exercise on end-to-end web development. Therefore, all
+  functionality, such as registration and password storage management,
+  authentication and session management, resource querying, are all written
+  from scratch. Bilbob is live on
+  \href{http://bilbob.fuadismail.com}{bilbob.fuadismail.com}.
+\end{justify}
+
+\resumeProjectHeading
+  {Rubbler}{November 2023 -- Present}
+  {\href{https://github.com/fuad1502/rubbler}{github.com/fuad1502/rubbler}}
+\begin{justify}
+  Rubbler is a RISC-V assembler written in Rust. This library was written with
+  the main purpose of embedding a simple RISC-V assembler inside of a RISC-V
+  CPU test bench code written with Verilator.
+\end{justify}
+
+\resumeProjectHeading
+  {RVSV}{November 2023 -- Present}
+  {\href{https://github.com/fuad1502/rvsv}{github.com/fuad1502/rvsv}}
+\begin{justify}
+  RVSV is a SystemVerilog implementation of a 5-stage pipelined RISC-V CPU.
+  Verification code is written in C++ using Verilator and Rubbler.
+\end{justify}
+
+\resumeProjectHeading
+  {KIBI}{October 2023 -- Present}
+  {\href{https://github.com/fuad1502/kibi}{github.com/fuad1502/kibi}}
+\begin{justify}
+  KIBI is a simple typing test web application. Built with React and Spring
+  Boot. KIBI is live on \href{http://kibi.fuadismail.com}{kibi.fuadismail.com}.
+\end{justify}
+\resumeSubHeadingListEnd
+
+%-----------ADDITIONAL PROJECTS-----------
+\section{Other Projects}
+\resumeSubHeadingListStart
+\resumeProjectHeading
+  {NAALG: Network Analyzer Algorithms C++ Library}{February 2024 -- Present}
+  {Keysight Technologies}
+\begin{justify}
+  I initiated the development of NAALG due two things. First, I was tasked with
+  developing a novel Time Domain Reflectometry (TDR) calculation from Vector
+  Network Analyzer (VNA) measurements. Second, on a different project, I had
+  just implemented a new calibration algorithm for an embedded VNA. Since both
+  of this project involves calculation on VNA measurements, I realize that it
+  would be nice to have a library that provides all of these VNA algorithms in
+  one place. NAALG is similar to
+  \href{https://scikit-rf.readthedocs.io}{scikit-rf}, but uses high performant
+  implementation in C++ to enable usage in embedded real-time measurement
+  applications.
+\end{justify}
+\resumeProjectHeading
+  {Custom Telecommunication Device (GMSK + TDM Transceiver)}{February 2024 -- Present}
+  {Hariff Daya Tunggal Engineering}
+\begin{justify}
+  My team was tasked with developing a fully custom telecommunication device.
+  My role was in developing the physical (PHY) and medium access control (MAC)
+  layer on an \textit{All Programmable SoC (APSoC)}. The PHY layer is written
+  in Verilog, while the MAC layer is written in C. Communication between the
+  two layers uses Direct Memory Access (DMA).
+\end{justify}
+\resumeProjectHeading
+  {Automatic Identification System Search and Rescue Transponder}{February 2024 -- Present}
+  {Labs247}
+\begin{justify}
+  Automatic Identification System (AIS) Search and Rescue Transponder (SART) is
+  a radio device used to locate distressed vessels. My role was in developing
+  all of the electronic and embedded software aspect of the device, and
+  production. We use \href{https://freertos.org}{FreeRTOS} Real-Time Operating
+  System to enable low power usage and multiple tasks management. Up till now
+  the device is still in production.
+\end{justify}
+\resumeSubHeadingListEnd
+
+%-----------RELEVANT EXPERIENCE-----------
+\section{Relevant Experience}
+\resumeSubHeadingListStart
+\resumeSubheading
+  {Software Engineer}{February 2021 - October 2021}
+  {Lumina Industries}{Jakarta, Indonesia}
+\resumeItemListStart
+\resumeItem{Wrote the Windows middleware for a Virtual Camera software using
+Win32 API.}
+\resumeItem{Developed image processing features using C++ with OpenCV.}
+\resumeItem{Worked remotely with a medium-sized team from various nationalities
+(USA, Taiwan, and Indonesia).}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%-----------ADDITIONAL EXPERIENCE-----------
+\section{Additional Experience}
+\resumeSubHeadingListStart
+\resumeSubheading
+  {R\&D Hardware Engineer}{January 2022 -- August 2023}
+  {Keysight Technologies}{Penang, Malaysia}
+\resumeItemListStart
+\resumeItem{Initiated the development of NAALG, a network analyzer algorithms
+C++ library.}
+\resumeItem{Demonstrated iniatiative by voluntarily improving an internal
+software tool used by our team.}
+\resumeItem{Demonstrated initiative by introducing a better software
+development workflow.}
+\resumeItem{Significantly improve the measurement accuracy of an embedded VNA
+product by introducing and implementing a better calibration algorithm.}
+\resumeItem{Successfully extend the measurement bandwidth of an embedded VNA
+product.}
+\resumeItem{Fixed a technical issue in an embedded VNA product and wrote a
+technical paper on it.}
+\resumeItem{Collaborate in a team from various time zones (USA, Europe, and
+Malaysia).}
+\resumeItemListEnd
+
+\resumeSubheading
+  {R\&D Radio Frequency Engineer}{August 2022 -- February 2021}
+  {Hariff Daya Tunggal Engineering}{Bandung, Indonesia}
+\resumeItemListStart
+\resumeItem{Wrote MATLAB simulations to evaluate system-level design tradeoffs
+for the development of a fully custom telecommunication device.}
+\resumeItem{Implemented the PHY and MAC layer of a fully custom telecommunication
+device on an APSoC using Verilog and C.}
+\resumeItem{Designed a schematic for a fully custom telecommunication device.}
+\resumeItemListEnd
+
+\resumeSubheading
+  {R\&D Electronic Design Engineer}{August 2018 -- August 2020}
+  {Labs247}{Jakarta, Indonesia}
+\resumeItemListStart
+\resumeItem{Lead the development of telecommunication product (AIS SART) which
+is still in production up till now.}
+\resumeItem{Involved in the development of medical product (CPAP BiPAP
+machine).}
+\resumeItem{Demonstrated initiative by suggesting cost-saving solutions that
+avoids vendor lock in and introduced an efficient production workflow.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
