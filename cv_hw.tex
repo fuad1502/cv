@@ -1,0 +1,313 @@
+%-------------------------
+% Resume in Latex
+% Author : Gennadii Chursov
+% Based off of: https://github.com/sb2nov/resume and https://www.overleaf.com/latex/templates/jakes-resume/syzfjbzwjncs
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{ragged2e}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\hypersetup {
+  colorlinks=false,% hyperlinks will be black
+  pdfborderstyle={/S/U/W 1}% border style will be underline of width 1pt
+}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+  \item
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \textit{\small#1} & \textit{\small #2} \\
+  \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[3]{
+  \item
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \small\textbf{#1} & #2 \\
+    \textit{\small#3} \\
+  \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\begin{center}
+  \textbf{\Huge \scshape Fuad Ismail} \\ \vspace{1pt}
+  \small \textit{} \\
+  +62-838-9937-3595 $|$ \href{mailto:fuad1502@gmail.com}{fuad1502@gmail.com} $|$ 
+  \href{https://github.com/fuad1502}{github.com/fuad1502}
+\end{center}
+
+%-----------SUMMARY-----------
+\section*{Summary}
+\justifying
+I am an ex-R\&D Hardware Engineer from Keysight Technologies Malaysia with over
+4 years of experience in the hardware industry (RF, electronics, embedded, and
+communication systems). Despite that, I am also acquinted with software
+development, as my work frequently require me to develop softwares, such as
+embedded software, mathematical simulation, and computational libraries.
+
+I took a career break since August 2023 due to personal reasons. I am currently
+self studying Computer Science to break into the industry. See
+\href{https://github.com/fuad1502/self-study-cs}{github.com/fuad1502/self-study-cs}
+to know what I've achieved throughout my 7-months career break.
+
+I am mainly interested in Systems Software (OS, Database, Distributed and
+Embedded Systems) and Computing Hardware. My goal is to consistently contribute
+to the OSS ecosystem by contributing to public repositories and building my own
+OSS projects. Currently, I have contributed to
+\href{https://github.com/verilator/verilator}{Verilator}, an open-source
+SystemVerilog simulator and lint system. (Pull request
+\href{https://github.com/verilator/verilator/pull/5006}{\#5006},
+\href{https://github.com/verilator/verilator/pull/4966}{\#4966})
+
+I am a passionate learner committed to continuous learning and have a track
+record of showing initiative at the workplace and deeply care about my work.
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading
+  {Bandung Institute of Technology}{Bandung, Indonesia}
+  {Electrical Engineering (BS), ABET Accredited, GPA
+  3.81/4.0}{2014 - 2018}
+\resumeSubHeadingListEnd
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+\small{\item{
+  \textbf{Programming Languages}{: SystemVerilog/Verilog, C, C++, MATLAB, Rust,
+    Go, Java, JavaScript, Python, SQL} \\
+  \textbf{Softwares}{: Vivado, Quartus/ModelSim, Verilator, KiCad, Mentor
+    Graphics Xpedition} \\
+  \textbf{Hardwares}{: Xilinx Zynq APSoC, STMicroelectronics STM32} \\
+  \textbf{Developer Tools}{: Git, Docker/Podman, CMake, Make}
+}}
+\end{itemize}
+
+%-----------PROJECTS-----------
+\section{Projects}
+\resumeSubHeadingListStart
+\resumeProjectHeading
+  {RVSV}{November 2023 -- Present}
+  {\href{https://github.com/fuad1502/rvsv}{github.com/fuad1502/rvsv}}
+\begin{justify}
+  RVSV is a SystemVerilog implementation of a 5-stage pipelined RISC-V CPU.
+  Verification code is written in C++ using Verilator and Rubbler.
+\end{justify}
+
+\resumeProjectHeading
+  {Rubbler}{November 2023 -- Present}
+  {\href{https://github.com/fuad1502/rubbler}{github.com/fuad1502/rubbler}}
+\begin{justify}
+  Rubbler is a RISC-V assembler written in Rust. This library was written with
+  the main purpose of embedding a simple RISC-V assembler inside of a RISC-V
+  CPU test bench code written with Verilator.
+\end{justify}
+
+\resumeProjectHeading
+  {NAALG: Network Analyzer Algorithms C++ Library}{}
+  {Associated with Keysight Technologies}
+\begin{justify}
+  I initiated the development of NAALG due two things. First, I was tasked with
+  developing a novel Time Domain Reflectometry (TDR) calculation from Vector
+  Network Analyzer (VNA) measurements. Second, on a different project, I had
+  just implemented a new calibration algorithm for an embedded VNA. Since both
+  of this project involves calculation on VNA measurements, I realize that it
+  would be nice to have a library that provides all of these VNA algorithms in
+  one place. NAALG is similar to
+  \href{https://scikit-rf.readthedocs.io}{scikit-rf}, but uses high performant
+  implementation in C++ to enable usage in embedded real-time measurement
+  applications.
+\end{justify}
+
+\resumeProjectHeading
+  {Custom Telecommunication Device (GMSK + TDM Transceiver)}{}
+  {Associated with Hariff Daya Tunggal Engineering}
+\begin{justify}
+  My team was tasked with developing a fully custom telecommunication device.
+  My role was in evaluating system level design tradeoffs using MATLAB and
+  developing the physical (PHY) and medium access control (MAC) layer on an
+  \textit{All Programmable SoC (APSoC)}. The PHY layer consists of, but not
+  limited to, baseband modulator, channel impulse response estimator, and
+  Viterbi equalizer. The PHY layer is written in Verilog, while the MAC layer
+  is written in C. Communication between the two layers uses Direct Memory
+  Access (DMA).
+\end{justify}
+
+\resumeProjectHeading
+  {Automatic Identification System Search and Rescue Transponder}{}
+  {Associated with Labs247}
+\begin{justify}
+  Automatic Identification System (AIS) Search and Rescue Transponder (SART) is
+  a radio device used to locate distressed vessels. My role was in developing
+  all of the electronic and embedded software aspect of the device, and
+  production. We use \href{https://freertos.org}{FreeRTOS} Real-Time Operating
+  System to enable low power usage and multiple tasks management. Up till now
+  the device is still in production.
+\end{justify}
+
+\resumeProjectHeading
+  {Physical, Data Link, and Network Layer Implementation for Visible Light
+  Communication}{}
+  {Associated with Institut Teknologi Bandung}
+\begin{justify}
+  Visible Light Communication (VLC), or sometimes referred as LiFi, is a
+  communication system that aims to use regular LEDs used in for lighting as an
+  internet access point. An IEEE standard has been released to accommodate the
+  standardization of this emerging technology, namely IEEE 802.15.7. In this
+  project we have made a fully functional VLC access point for a single user
+  that has a data rate of around 500 kbps, enabling streaming YouTube videos in
+  144p. My workload was to create the baseband signal processing on an All
+  Programmable SoC, which meant the design utilizes both an FPGA and a
+  processor. The network and data link layer are implemented with a program
+  written in C. The physical layer was designed based on the IEEE 802.15.7
+  standard, which includes VPPM encoding, CRC append and check, and
+  Reed-Solomon FEC. The physical layer ran on the FPGA substrate and was
+  written in Verilog. I also integrated a Xillybus IP core for the
+  interconnection between the FPGA and the processor.
+\end{justify}
+\resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+\resumeSubHeadingListStart
+\resumeSubheading
+  {R\&D Hardware Engineer}{January 2022 -- August 2023}
+  {Keysight Technologies}{Penang, Malaysia}
+\resumeItemListStart
+\resumeItem{Initiated the development of NAALG (\textit{see above}), a network
+analyzer algorithms C++ library.}
+\resumeItem{Significantly improve the measurement accuracy of an embedded VNA
+product by introducing and implementing a better calibration algorithm.}
+\resumeItem{Successfully extend the measurement bandwidth of an embedded VNA
+product by suggesting improvements to the RF layout.}
+\resumeItem{Fixed an RF technical issue in an embedded VNA product and wrote a
+technical paper on it.}
+\resumeItem{Demonstrated iniatiative by voluntarily improving an internal
+software tool used by our team.}
+\resumeItem{Demonstrated initiative by introducing a better software
+development workflow.}
+\resumeItem{Collaborate in a team from various time zones (USA, Europe, and
+Malaysia).}
+\resumeItemListEnd
+
+\resumeSubheading
+  {Software Engineer}{February 2021 - October 2021}
+  {Lumina Industries}{Jakarta, Indonesia}
+\resumeItemListStart
+\resumeItem{Wrote the Windows middleware for a Virtual Camera software using
+Win32 API.}
+\resumeItem{Developed image processing features using C++ with OpenCV.}
+\resumeItem{Worked remotely with a medium-sized team from various nationalities
+(USA, Taiwan, and Indonesia).}
+\resumeItemListEnd
+
+\resumeSubheading
+  {R\&D Radio Frequency Engineer}{August 2020 -- February 2021}
+  {Hariff Daya Tunggal Engineering}{Bandung, Indonesia}
+\resumeItemListStart
+\resumeItem{Wrote MATLAB simulations to evaluate system-level design tradeoffs
+for the development of a fully custom telecommunication device (\textit{see
+above}).}
+\resumeItem{Implemented the PHY and MAC layer of a fully custom
+telecommunication device on an APSoC using Verilog and C.}
+\resumeItem{Designed a schematic for a fully custom telecommunication device.}
+\resumeItemListEnd
+
+\resumeSubheading
+  {R\&D Electronic Design Engineer}{August 2018 -- August 2020}
+  {Labs247}{Jakarta, Indonesia}
+\resumeItemListStart
+\resumeItem{Lead the development of telecommunication product (Automatic
+Identification System Search and Rescue Transponder, \textit{see above}) which
+is still in production up till now.}
+\resumeItem{Involved in the development of medical product (CPAP BiPAP
+machine).}
+\resumeItem{Demonstrated initiative by suggesting cost-saving solutions that
+avoids vendor lock in and introduced an efficient production workflow.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
