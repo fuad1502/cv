@@ -146,9 +146,9 @@ care about the quality of my work.
 
 I am currently a software engineer at Samsung. I maintain the firmware code
 base of Samsung's Galaxy SmartTag products and third-party SmartThings Find
-compatible products. Previously, I maintained \& developed systems software
-running on Samsung's Tizen OS while independently working on optimizing the
-.NET runtime Just-In-Time compiler for RISC-V architecture.
+compatible products. Previously, I maintained systems software running on
+Samsung's Tizen OS while independently working on optimizing the .NET runtime
+Just-In-Time compiler for RISC-V architecture.
 
 I have contributed to various \CC\ \& Rust open source projects:
 \githubPRs{dotnet/runtime}{.NET runtime}, \githubPRs{llvm/llvm-project}{LLVM},
@@ -171,19 +171,6 @@ simulator UI that runs on the terminal.
 {Bandung Institute of Technology}{Bandung, Indonesia}
 {Electrical Engineering (BSc), ABET Accredited, GPA 3.81/4.0}{2014 - 2018}
 \resumeSubHeadingListEnd
-
-%=========================
-% Technical Skill Highlights
-%=========================
-\section{Technical Skill Highlights}
-\begin{itemize}[leftmargin=0.15in, label={}]
-	\small{\item{
-	      \textbf{Programming Languages}{: \CC, C, Rust, RISC-V/ARM/x86 Assembly, OCaml, \CS, Go, Python, SystemVerilog} \\
-	      \textbf{Developer Tools}{: CMake, Make, RPM/DEB packaging, GDB/LLDB, Git, Docker/Podman } \\
-	      \textbf{Libraries, Frameworks, Standards}{: POSIX, Zephyr, FreeRTOS, Kconfig, Devicetree, Ratatui, Tizen NUI } \\
-	      \textbf{Knowledge Domains}{: Compilers/Runtimes, Embedded Systems, Operating Systems, GNU/Linux, Digital/Analog/RF electronics, Schematic \& PCB Design }
-	      }}
-\end{itemize}
 
 %=========================
 % Open Source Contributions
@@ -210,11 +197,9 @@ simulator UI that runs on the terminal.
 		      : \prLink{verilator/verilator}{4966},
 		      \prLink{verilator/verilator}{5006}
 	      } \\
-	      \textbf{uutils/coreutils}{
-		      : \prLink{uutils/coreutils}{6951}
-	      } \\
-	      \textbf{uutils/util-linux}{
-		      : \prLink{uutils/util-linux}{152},
+	      \textbf{uutils}{
+		      : \prLink{uutils/coreutils}{6951},
+		      \prLink{uutils/util-linux}{152},
 		      \prLink{uutils/util-linux}{160},
 		      \prLink{uutils/util-linux}{167}
 	      }
@@ -222,14 +207,14 @@ simulator UI that runs on the terminal.
 \end{itemize}
 
 %=========================
-% Experiences in S/W Industry
+% Experience
 %=========================
-\section{Experiences in S/W Industry}
+\section{Experience}
 \resumeSubHeadingListStart
 
 \resumeSubheading
 {\href{https://www.samsung.com/id/srin/}{Samsung}}{April 2026 - Present}
-{Software Engineer (IoT Application)}{Jakarta, Indonesia}
+{Software Engineer (IoT Application Part)}{Jakarta, Indonesia}
 \resumeItemListStart
 \resumeItem{
   Optimized the RAM footprint of SmartThings Find Device SDK for Zephyr targets
@@ -252,13 +237,12 @@ simulator UI that runs on the terminal.
 
 \resumeSubheading
 {\href{https://www.samsung.com/id/srin/}{Samsung}}{June 2024 - April 2026}
-{Software Engineer (TV S/W Platform)}{Jakarta, Indonesia}
+{Software Engineer (TV Software Platform Part)}{Jakarta, Indonesia}
 \resumeItemListStart
 \resumeItem{
-	Demonstrated intiative by independently introducing multiple
-	optimizations to upstream .NET runtime RISC-V Just-In-Time compiler
-	which improved multiple micro-benchmarks performance scores on
-	Samsung's RISC-V TV chipset by up to 60\%.
+  Introduced multiple optimizations to upstream .NET runtime RISC-V
+  Just-In-Time compiler which improved multiple micro-benchmarks performance
+  scores on Samsung's RISC-V TV chipset by up to 60\%.
 }
 \resumeItem{
 	Resolve various issues and implement new features for Tizen OS's App
@@ -266,10 +250,36 @@ simulator UI that runs on the terminal.
 	application launcher) written in \CC.
 }
 \resumeItem{Initiated the porting of a systems component to Rust.}
-\resumeItem{Received an employee of the quarter award.}
+\resumeItem{Received an employee of the quarter award \& won second place in a
+Software Architecture Design Competition for my refactor work.
+}
+\resumeItemListEnd
+
+\resumeSubheading
+{\href{https://www.keysight.com/}{Keysight Technologies}}{January 2022 -- August 2023}
+{R\&D Hardware Engineer}{Penang, Malaysia}
+\resumeItemListStart
 \resumeItem{
-	Won second place in a Software Architecture Design Competition for my
-	refactor work.
+  Significantly improve the measurement accuracy of an embedded 16-channel VNA
+  product
+  (\href{https://www.keysight.com/content/dam/keysight/en/doc/gate/application-notes/Microwave-Sensing-Applications-in-Brain-Imaging.pdf}{Keysight
+  MN7021A}) by introducing and implementing a unique calibration algorithm.
+}
+\resumeItem{
+  Successfully extend the measurement bandwidth of Keysight MN7021A embedded
+  VNA by suggesting PCB layout improvements.
+}
+\resumeItem{
+  Fixed an RF oscilation issue found on Keysight MN7021A embedded VNA by
+  performing an accurate EM simulation and wrote a technical paper on it.
+}
+\resumeItem{
+	Initiated the development of NAALG, a network analyzer algorithms \CC\
+	library.
+}
+\resumeItem{
+	Collaborate in a team from various time zones (USA, Europe, and
+	Malaysia).
 }
 \resumeItemListEnd
 
@@ -285,40 +295,6 @@ simulator UI that runs on the terminal.
 \resumeItem{
 	Worked remotely in a medium-sized team from various nationalities (USA,
 	Taiwan, and Indonesia).
-}
-\resumeItemListEnd
-
-\resumeSubHeadingListEnd
-
-%=========================
-% Experiences in H/W Industry
-%=========================
-\section{Experiences in H/W Industry}
-\resumeSubHeadingListStart
-
-\resumeSubheading
-{\href{https://www.keysight.com/}{Keysight Technologies}}{January 2022 -- August 2023}
-{R\&D Hardware Engineer}{Penang, Malaysia}
-\resumeItemListStart
-\resumeItem{
-	Initiated the development of NAALG, a network analyzer algorithms \CC\
-	library.
-}
-\resumeItem{
-	Significantly improve the measurement accuracy of an embedded VNA
-	product by introducing and implementing a better calibration algorithm.
-}
-\resumeItem{
-	Successfully extend the measurement bandwidth of an embedded VNA
-	product.
-}
-\resumeItem{
-	Fixed a technical issue in an embedded VNA product and wrote a
-	technical paper on it.
-}
-\resumeItem{
-	Collaborate in a team from various time zones (USA, Europe, and
-	Malaysia).
 }
 \resumeItemListEnd
 
@@ -408,22 +384,6 @@ simulator UI that runs on the terminal.
 %=========================
 \section{Other Projects}
 \resumeSubHeadingListStart
-
-\resumeProjectHeading
-{NAALG: Network Analyzer Algorithms \CC\ Library}{}
-{Keysight Technologies}
-\begin{justify}
-	I initiated the development of NAALG due two things. First, I was
-	tasked with developing a novel Time Domain Reflectometry (TDR)
-	calculation from Vector Network Analyzer (VNA) measurements. Second, on
-	a different project, I had just implemented a new calibration algorithm
-	for an embedded VNA. Since both of this project involves calculation on
-	VNA measurements, I realize that it would be nice to have a library
-	that provides all of these VNA algorithms in one place. NAALG is
-	similar to \href{https://scikit-rf.readthedocs.io}{scikit-rf}, but uses
-	high performant implementation in \CC\ to enable usage in embedded
-	real-time measurement applications.
-\end{justify}
 
 \resumeProjectHeading
 {Custom Telecommunication Device (GMSK + TDM Transceiver)}{}
